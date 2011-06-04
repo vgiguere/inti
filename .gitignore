@@ -1,3 +1,6 @@
 target/*
 out/*
 .idea/*
+.init.iml
+.inti-grailsPlugins.iml
+
