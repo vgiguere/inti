@@ -1,0 +1,1296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" xmlns:re="http://purl.org/atompub/rank/1.0">
+    <title type="text">active questions tagged grails - Stack Overflow</title>
+    <link rel="self" href="http://stackoverflow.com/feeds/tag/grails" type="application/atom+xml" />
+    <link rel="alternate" href="http://stackoverflow.com/questions/tagged/?tagnames=grails&amp;sort=active" type="text/html" />
+    <subtitle>most recent 30 from stackoverflow.com</subtitle>
+    <updated>2011-06-02T01:46:55Z</updated>
+    <id>http://stackoverflow.com/feeds/tag/grails</id>
+    <creativeCommons:license>http://www.creativecommons.org/licenses/by-nc/2.5/rdf</creativeCommons:license> 
+    <entry>
+        <id>http://stackoverflow.com/questions/6207422/how-to-design-a-messaging-system-with-grails</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">How to design a messaging system with grails ?</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="architecture"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="grails"/>
+        <author>
+            <name>Jonathan Lebrun</name>
+            <uri>http://stackoverflow.com/users/320322</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/6207422/how-to-design-a-messaging-system-with-grails" />
+        <published>2011-06-01T20:44:05Z</published>
+        <updated>2011-06-01T20:44:05Z</updated>
+        <summary type="html">
+            &lt;p&gt;I want to implement a system like stackoverflow warning message in my grails application. This is a simple use case :&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;A user update a document&lt;/li&gt;
+&lt;li&gt;On next login, all users participate on the document receives a message that the user xxx updated.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Which is the best design/implementation/architecture to do that ? Which tools/plugin ?&lt;/p&gt;
+
+&lt;p&gt;Thanks. &lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/6204988/groovy-email-client-to-work-on-both-exchange-2003-adn-exchange-2010</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">groovy Email client to work on both Exchange 2003 adn Exchange 2010</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="email"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="grails"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="exchange-server"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="ews"/>
+        <author>
+            <name>Krish</name>
+            <uri>http://stackoverflow.com/users/779857</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/6204988/groovy-email-client-to-work-on-both-exchange-2003-adn-exchange-2010" />
+        <published>2011-06-01T17:04:29Z</published>
+        <updated>2011-06-01T20:40:25Z</updated>
+        <summary type="html">
+            &lt;p&gt;I need to implement a feature in my application to process a email, that i need to read by logging into the Exchange server. My question is what is the way to make my solution to work in both Exchange 2003 and 2010?
+in near future my exchange sever may get upgraded
+Note: I cannot use Imap, POP,...
+I can use only Mapi or EWS.&lt;/p&gt;
+
+        </summary>
+        <answer><![CDATA[<p>There appear to be several options in Java to do this but no groovy specific ones. Pick one of them and use it from your groovy code. I haven't tried any of these but have a look at all the exchange providers listed on <a href="http://java.sun.com/products/javamail/Third_Party.html" rel="nofollow">this page</a></p> ]]></answer>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/6201492/grails-upgrading-from-acegi-to-spring-security-plugin</id>
+        <re:rank scheme="http://stackoverflow.com">1</re:rank>
+        <title type="text">Grails, upgrading from Acegi to Spring security plugin</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="security"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="spring"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="grails"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="groovy"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="acegi"/>
+        <author>
+            <name>Robin Diederen</name>
+            <uri>http://stackoverflow.com/users/486950</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/6201492/grails-upgrading-from-acegi-to-spring-security-plugin" />
+        <published>2011-06-01T12:57:13Z</published>
+        <updated>2011-06-01T20:10:34Z</updated>
+        <summary type="html">
+            &lt;p&gt;Hello all,&lt;/p&gt;
+
+&lt;p&gt;Yesterday I started upgrading our Grails app from Acegi plugin 0.5.2 to the Spring security plugin. I&#39;m running into a few issues, maybe anyone can help here?&lt;/p&gt;
+
+&lt;p&gt;After making the necessary changes (as documented by Burt Beckwith on &lt;a href=&quot;http://burtbeckwith.github.com/grails-spring-security-core/docs/manual/guide/&quot; rel=&quot;nofollow&quot;&gt;http://burtbeckwith.github.com/grails-spring-security-core/docs/manual/guide/&lt;/a&gt;) I was able to start the Grails app once again (woohoo!). However, logging in didn&#39;t work anymore. &lt;/p&gt;
+
+&lt;p&gt;Our situation is as follows: we use our Grails application pure for its application logic. Authentication is done using a username and password through webservices. As backends we use the database of the app (dao) and a LDAP backend. For now, we&#39;ve disabled LDAP, to make testing easier.&lt;/p&gt;
+
+&lt;p&gt;This is the code which does the authentication:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;def authenticate(String username, String password) {
+try {
+      println &quot;Trying authentication with user &quot; + username + &quot; and password &quot; + password + &quot;.&quot;
+      def tempToken = new UsernamePasswordAuthenticationToken(username, password)
+      println &quot;Temptoken is &quot; + tempToken
+      def token = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(username, password))
+      println &quot;Authentication token received was: &quot; + token
+    } catch (AuthenticationException authenticationException) {
+        return false
+    }
+    return true     
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This prints to the log:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Trying authentication with user admin and password admin.
+Temptoken is org.springframework.security.providers.UsernamePasswordAuthenticationToken@1f: Principal: admin; Password: [PROTECTED]; Authenticated: false; Details: null; Not granted any authorities
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And then it all stops. &lt;/p&gt;
+
+&lt;p&gt;The domain classes we use are rather straightforward. We do not use a class such as the User Role for the joins between people and their authorities. Instead we use a many-to-many mapping, as this has always worked for us and is easy to maintain.&lt;/p&gt;
+
+&lt;p&gt;Our authority domain class:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class Authority {
+static hasMany = [people: Person]
+
+/** description */
+String description
+/** ROLE String */
+String authority = &#39;&#39;
+
+String authorityType
+
+static constraints = {
+    authority(help:&#39;x&#39;,class:&#39;wide&#39;,blank: false,unique:true)
+    description(help:&#39;x&#39;,class:&#39;extrawide&#39;)
+    authorityType(help:&#39;x&#39;,class:&#39;wide&#39;)
+    people(help:&#39;x&#39;,selectSort:&#39;username&#39;,display:false)
+}   
+
+String toString() {
+      return authority;
+}   
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And our Person domain class:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class Person  {
+
+static hasMany = [authorities: Authority]
+static belongsTo = Authority
+
+//Authority primaryGroup
+
+/** Username */
+String username
+/** User Real Name*/
+String userRealName
+String familyName
+String givenName
+
+/** MD5 Password */
+String passwd
+/** enabled */
+boolean enabled
+
+String email
+boolean emailShow
+
+/** description */
+String description = &#39;&#39;
+
+
+
+static constraints = {
+    username(blank: false, unique: true,help:&#39;x&#39;,class:&#39;wide&#39;)
+    userRealName(blank: false,help:&#39;x&#39;,class:&#39;wide&#39;)
+    familyName(blank: false,help:&#39;x&#39;,class:&#39;wide&#39;)
+    givenName(blank: false,help:&#39;x&#39;,class:&#39;wide&#39;)
+    email(help:&#39;x&#39;,class:&#39;wide&#39;)
+    emailShow(help:&#39;x&#39;)
+    enabled(help:&#39;x&#39;)
+    passwd(blank: false,password:true,show:false,help:&#39;x&#39;,class:&#39;wide&#39;)
+    authorities(nullable:true,help:&#39;x&#39;,sortable:true,selectSort:&#39;authority&#39;)        
+}
+
+String toString() {
+      return username;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In Config.Groovy, we have defined:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;security {
+active = false
+cacheUsers = false
+
+grails.plugins.springsecurity.providerNames = [&#39;daoAuthenticationProvider&#39;, &#39;anonymousAuthenticationProvider&#39;, &#39;rememberMeAuthenticationProvider&#39;]
+
+grails.plugins.springsecurity.userLookUp.userDomainClassName = &quot;Person&quot;
+grails.plugins.springsecurity.authority.className = &quot;Authority&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As far as the documentation goes, this should work by all means (and so it did for the &quot;old&quot; Acegi setup). &lt;/p&gt;
+
+&lt;p&gt;To gather some more insights I briefly activated LDAP and found the same issue. WireShark told me that no LDAP calls were made during the login process. My guess would be that either there&#39;s something wrong with the code in the Authenticate function or SpringSecurity doesn&#39;t know how to pick up our domain classes. &lt;/p&gt;
+
+&lt;p&gt;I&#39;d be glad to read any insights!&lt;/p&gt;
+
+        </summary>
+        <answer><![CDATA[<p>It seems that the token is not valid, so the authenticate() call fails and generates an exception (IIRC it only returns a value if the call succeed). </p>
+
+<p>My first try would be to check if the database has a row for user:'admin', password:'admin' for the environment.</p>
+
+<p>After some thought, I would double-check the password property in Person class. Either via mapping in the domain class, or better via</p>
+
+<pre><code>userLookup.passwordPropertyName = "passwd"
+</code></pre> ]]></answer>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/6204641/applicationcontext-in-config-groovy</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">applicationContext in Config.groovy</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="grails"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="groovy"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="config"/>
+        <author>
+            <name>Arthur Neves</name>
+            <uri>http://stackoverflow.com/users/534150</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/6204641/applicationcontext-in-config-groovy" />
+        <published>2011-06-01T16:36:30Z</published>
+        <updated>2011-06-01T18:50:05Z</updated>
+        <summary type="html">
+            &lt;p&gt;is possible access the applicationContext in the config file?!&lt;/p&gt;
+
+&lt;p&gt;What I`m trying to do is get the full path(server path) for my app!&lt;/p&gt;
+
+&lt;p&gt;Pretty much I want is:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/usr/tomcat/myapp/web-inf
+&lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+        <answer><![CDATA[<p>Maybe I misunderstand your question but I guess your are trying to retrieve the URL of your web application similar to this one: <code>http://localhost:8080/myawesomeapp</code>. <code>Config.groovy</code> has a built in option <a href="http://grails.org/doc/latest/guide/3.%20Configuration.html#3.1.1%20Built%20in%20options" rel="nofollow">grails.serverURL</a> but this doesn't give you the web application subcontext. The result would be <code>http://localhost:8080</code>. I am not aware of a different option that would also give you the full web app context URL.</p>
+
+<p>Alternatively, you can always use a method like this in your Grails controller that would give you the full web app URL:</p>
+
+<pre><code>def getContextUrl(HttpServletRequest httpServletRequest) {
+    String scheme = httpServletRequest.scheme
+    String serverName = httpServletRequest.serverName
+    int serverPort = httpServletRequest.serverPort
+    String contextPath = httpServletRequest.contextPath
+
+    def url = new StringBuilder()
+    url &lt;&lt;= '://'
+    url &lt;&lt;= serverName
+
+    if(serverPort &amp;&amp; serverPort != 80) {
+        url &lt;&lt;= ':'
+        url &lt;&lt;= serverPort
+    }
+
+    url.toString()
+}
+</code></pre> ]]></answer>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/6205422/should-grails-filters-run-twice-on-forward-in-this-instance</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">should grails filters run twice on forward in this instance?</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="grails"/>
+        <author>
+            <name>netbrain</name>
+            <uri>http://stackoverflow.com/users/410747</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/6205422/should-grails-filters-run-twice-on-forward-in-this-instance" />
+        <published>2011-06-01T17:40:42Z</published>
+        <updated>2011-06-01T17:40:42Z</updated>
+        <summary type="html">
+            &lt;p&gt;According to this &lt;a href=&quot;http://grails.1312388.n4.nabble.com/Should-Filters-Run-After-A-Forward-td3063737.html&quot; rel=&quot;nofollow&quot;&gt;mailinglist entry&lt;/a&gt;, grails filters should be invoked on a forward. which effectively causes filters to be invoked &lt;code&gt;1 + x number of forwards&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;However, in my situation i question the method of how this is done. Here is a rough mashup of my system:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;i have a filter which is invoked on the uri condition of &lt;code&gt;&quot;/api/**&quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;an urlmapping that goes something like this: &lt;code&gt;&quot;/api/$version/$apiKey/$rest**&quot;&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$rest&lt;/code&gt; may contain (as an example) the value &lt;code&gt;/book/show/1&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;an ApiController thats sole purpose is to forward to another uri depending on &lt;code&gt;$rest&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So lets say i access the url &lt;code&gt;/api/0.1/Ks38...7fn38/book/show/1&lt;/code&gt; what then happens is that the api filter is invoked and it does all the version and apiKey validatation. it then continues to forward to the uri &lt;code&gt;/book/show/1&lt;/code&gt; which then invokes the Api filter a second time even though the filter is mapped up agains &lt;code&gt;/api/**&lt;/code&gt; and the new uri is effectively &lt;code&gt;/book/...&lt;/code&gt;. Now let it be said, i agree that filters should be invoked on a forward, but i dont agree that the api filter should be invoked a second time when i am doing a forward to &lt;code&gt;/book...&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This can&#39;t be correct behaviour? can it?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/6201273/how-to-get-date-from-calendardatepicker-and-make-an-ajax-call</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">How to get date from calendar:datePicker and make an ajax call?</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="grails"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="calendar"/>
+        <author>
+            <name>tmp</name>
+            <uri>http://stackoverflow.com/users/739890</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/6201273/how-to-get-date-from-calendardatepicker-and-make-an-ajax-call" />
+        <published>2011-06-01T12:38:54Z</published>
+        <updated>2011-06-01T16:53:15Z</updated>
+        <summary type="html">
+            &lt;p&gt;I&#39;ve added plugin calendar &lt;a href=&quot;http://www.grails.org/plugin/calendar&quot; rel=&quot;nofollow&quot;&gt;http://www.grails.org/plugin/calendar&lt;/a&gt; to my web app. I don&#39;t know how to handle change value event, get date and call ajax request to refresh some other part of the page that depends on this date. Where should I call controller/action?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/3934146/how-to-add-constraints-on-inherited-properties-in-a-grails-domain-sub-class</id>
+        <re:rank scheme="http://stackoverflow.com">11</re:rank>
+        <title type="text">How to add constraints on inherited properties in a grails domain sub-class</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="inheritance"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="grails"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="constraints"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="subclass"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="command-objects"/>
+        <author>
+            <name>werner5471</name>
+            <uri>http://stackoverflow.com/users/360480</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/3934146/how-to-add-constraints-on-inherited-properties-in-a-grails-domain-sub-class" />
+        <published>2010-10-14T14:22:41Z</published>
+        <updated>2011-06-01T16:43:00Z</updated>
+        <summary type="html">
+            &lt;p&gt;Here&#39;s what I&#39;d like to do:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class A {
+  String string
+  static constraints = {
+    string(maxSize:100)
+  }
+}
+
+class B extends A {
+  static constraints = {
+    string(url:true)
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So class A should have &lt;strong&gt;some&lt;/strong&gt; constraints and B should have &lt;strong&gt;the same plus additional&lt;/strong&gt; constraints on the same property.&lt;/p&gt;
+
+&lt;p&gt;I couldn&#39;t get that to work though and I can imagine that it would clash with the Table-per-Hierarchy concept.&lt;/p&gt;
+
+&lt;p&gt;So I tried to work around that problem by introducing a Command object with class B&#39;s constraints which can be validated in the constructor of class B. However it seems that Command objects can only be used within controllers (grails keeps saying that there is no .validate() method for it).&lt;/p&gt;
+
+&lt;p&gt;So my question is: What is the most elegant way to solve this using grails constraints (not re-implementing the validation manually)? Could be...&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Switching to Table-per-Sub-Class concept?&lt;/li&gt;
+&lt;li&gt;Making the Command Object work in the Domain class somehow?&lt;/li&gt;
+&lt;li&gt;Any other way?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Edit:&lt;/strong&gt; It would be okay for me to define all the constraints in the child classes, repeating the constraints of the parent class or not even having constraints in the parent class at all. But the solution should work for multiple child classes (with different constraints) of the same parent class.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/6073456/groovy-way-of-ifvar-fnvar</id>
+        <re:rank scheme="http://stackoverflow.com">2</re:rank>
+        <title type="text">groovy way of if(var) fn(var)</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="grails"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="groovy"/>
+        <author>
+            <name>atian25</name>
+            <uri>http://stackoverflow.com/users/537353</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/6073456/groovy-way-of-ifvar-fnvar" />
+        <published>2011-05-20T14:35:15Z</published>
+        <updated>2011-06-01T14:58:01Z</updated>
+        <summary type="html">
+            &lt;p&gt;i want to know is there any groovier way of code below:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;def dataList = OperLog.createCriteria().list(max:params.max, offset:params.offset) {
+    if(params.relationId){
+      eq(&#39;relationId&#39;,params.long(&#39;relationId&#39;))
+    }
+    order(params.sort, params.order)
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;such as  someVar?.someMethod
+is there any sugar of  don&#39;t call a method where it&#39;s params is null&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/6202717/is-grails-supposed-to-ignore-the-flush-mode-in-integration-tests</id>
+        <re:rank scheme="http://stackoverflow.com">1</re:rank>
+        <title type="text">Is Grails supposed to ignore the flush mode in integration tests?</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="hibernate"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="grails"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="integration-testing"/>
+        <author>
+            <name>morungos</name>
+            <uri>http://stackoverflow.com/users/731670</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/6202717/is-grails-supposed-to-ignore-the-flush-mode-in-integration-tests" />
+        <published>2011-06-01T14:22:29Z</published>
+        <updated>2011-06-01T14:22:29Z</updated>
+        <summary type="html">
+            &lt;p&gt;I&#39;m working on a Grails (transactional) service which builds a complex domain structure and persists it. The logic works by identifying a previous structure, then creating a new structure and then -- if it passes validation -- removing any old structure and persisting the new one. Grails flush modes are getting in the way, because the validation logic does queries, which in AUTO mode persists parts of the domain structure before it is complete. &lt;/p&gt;
+
+&lt;p&gt;I have set in DataSource.groovy:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hibernate {
+    flush.mode = &quot;commit&quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;because I need (I think) to turn off the AUTO handling which flushes on query. Without this, parts of my new structure are being written incrementally during the validation process, which causes Hibernate to throw hideous integrity errors. &lt;/p&gt;
+
+&lt;p&gt;During my integration test -- despite the setting in DataSource.groovy -- the flush mode is still logged as AUTO. Is there a good reason why Grails shouldn&#39;t respect my setting? &lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/6196233/how-do-you-get-the-sessionfactory-in-a-grails-geb-spock-test-case</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">How do you get the sessionFactory in a Grails Geb/Spock test case?</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="grails"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="groovy"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="spock"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="geb"/>
+        <author>
+            <name>pmc</name>
+            <uri>http://stackoverflow.com/users/195721</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/6196233/how-do-you-get-the-sessionfactory-in-a-grails-geb-spock-test-case" />
+        <published>2011-06-01T04:20:51Z</published>
+        <updated>2011-06-01T12:32:01Z</updated>
+        <summary type="html">
+            &lt;p&gt;I think I need to flush the hibernate session in a GebSpec test, and so I want to get the sessionFactory.&lt;/p&gt;
+
+&lt;p&gt;It looks like it should be injected but when I do something like this:-&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class MySpec extends GebSpec {
+def sessionFactory
+...
+def &quot;test session&quot;(){
+....do some setup
+then: 
+  assert sessionFactory != null
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;it fails with sessionFactory being null.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/6199977/how-to-iterator-over-an-array-in-groovy</id>
+        <re:rank scheme="http://stackoverflow.com">2</re:rank>
+        <title type="text">How to iterator over an array in Groovy?</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="arrays"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="grails"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="groovy"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="iteration"/>
+        <author>
+            <name>HanuAthena</name>
+            <uri>http://stackoverflow.com/users/157705</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/6199977/how-to-iterator-over-an-array-in-groovy" />
+        <published>2011-06-01T10:51:12Z</published>
+        <updated>2011-06-01T12:11:27Z</updated>
+        <summary type="html">
+            &lt;pre&gt;&lt;code&gt;public class ArrayTest{
+  public static void main(String[] args){
+    String[] list = {&quot;key1&quot;, &quot;key2&quot;, &quot;key3&quot;};
+    String[] list2 = {&quot;val1&quot;, &quot;val2&quot;, &quot;val3&quot;};
+
+    for(int i = 0; i &amp;lt; list.length; i++){
+      ilike(list[i], list2[i];        
+    }
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;How to write the above code in Groovy?&lt;/p&gt;
+
+&lt;p&gt;Actually, its a grails application where I want to do similar thing above.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/6197949/how-to-use-grails-filter-0-2-plug-in</id>
+        <re:rank scheme="http://stackoverflow.com">-2</re:rank>
+        <title type="text">How to use grails-filter-0.2 plug in?</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="plugins"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="grails"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="filter"/>
+        <author>
+            <name>laxmi</name>
+            <uri>http://stackoverflow.com/users/762666</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/6197949/how-to-use-grails-filter-0-2-plug-in" />
+        <published>2011-06-01T07:55:03Z</published>
+        <updated>2011-06-01T11:45:58Z</updated>
+        <summary type="html">
+            &lt;p&gt;Hi..&lt;/p&gt;
+
+&lt;p&gt;I want to use grails-filter-0.2 plugin in my app..I am not getting any tutorial on how to use it.&lt;/p&gt;
+
+&lt;p&gt;i got this &lt;strong&gt;http://www.grails.org/Filter+plugin&lt;/strong&gt; but this link contains a demo example but i want a detailed tutorial on how to use it.can any one send me if any link as such.&lt;/p&gt;
+
+&lt;p&gt;with advance thanks
+laxmi&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/6193390/grails-what-are-the-main-issues-and-his-solutions-when-deploying-in-weblogic</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Grails: what are the main issues (and his solutions) when deploying in weblogic?</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="grails"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="weblogic"/>
+        <author>
+            <name>Topera</name>
+            <uri>http://stackoverflow.com/users/411247</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/6193390/grails-what-are-the-main-issues-and-his-solutions-when-deploying-in-weblogic" />
+        <published>2011-05-31T20:49:50Z</published>
+        <updated>2011-06-01T09:12:56Z</updated>
+        <summary type="html">
+            &lt;p&gt;Hi,&lt;/p&gt;
+
+&lt;p&gt;I&#39;m trying to deploy my grails application (*.war) in a weblogic server.
+But now I&#39;m getting error:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&quot;/index.gsp&quot; not found.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;While I run to solve this I&#39;m think what more problems can happen when someone change deploy from Apache Tomcat to Oracle Weblogic.&lt;/p&gt;
+
+&lt;p&gt;Anybody have a list of commons problems/solutions to share?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/6192786/grails-validation-fails-after-interchanging-unique-attribute-values</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Grails validation fails after interchanging unique attribute values</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="grails"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="grails-validation"/>
+        <author>
+            <name>Zwackelmann</name>
+            <uri>http://stackoverflow.com/users/775938</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/6192786/grails-validation-fails-after-interchanging-unique-attribute-values" />
+        <published>2011-05-31T19:53:00Z</published>
+        <updated>2011-06-01T08:03:53Z</updated>
+        <summary type="html">
+            &lt;p&gt;Grails validation fails after interchanging unique attribute values&lt;/p&gt;
+
+&lt;p&gt;Hi, I am trying to create an interface where users can create some custom enumeration with translations for different languages. For example the user can create an enumeration &quot;Movie Genre&quot;. For this enumeration there might be an enumeration-value &quot;Comedy&quot; for which there might exist one ore more enumeration-value-translations for several languages. &lt;/p&gt;
+
+&lt;p&gt;As there must only be one translation for a specific language, I added a unique constraint to the enumeration-value-translation domain class. These are my domain classes right now:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class Enumeration {
+    String label
+    List&amp;lt;EnumerationValue&amp;gt; enumerationValues = new ArrayList&amp;lt;EnumerationValue&amp;gt;()
+
+    static hasMany = [ enumerationValues: EnumerationValue ]
+    static constraints = {
+        label(nullable: false, blank: false)
+        enumerationValues(nullable: true)
+    }
+}
+
+
+class EnumerationValue {
+    String label
+    List&amp;lt;EnumerationValueTranslation&amp;gt; enumerationValueTranslations = new ArrayList&amp;lt;EnumerationValueTranslation&amp;gt;()
+
+    static belongsTo = [ enumeration: Enumeration ]
+    static hasMany = [ enumerationValueTranslations: EnumerationValueTranslation ]
+
+    static constraints = {
+        label(nullable: false, blank: false, unique: &#39;enumeration&#39;)
+        enumeration(nullable: false) 
+        enumerationValueTranslations(nullable: false)
+    }
+}
+
+
+class EnumerationValueTranslation {
+    String value
+    Language language
+
+    static belongsTo = [ enumerationValue: EnumerationValue ]
+
+    static constraints = {
+        value(nullable: false, blank: false)
+        language(nullable: true, unique: &#39;enumerationValue&#39;)
+        enumerationValue(nullable: false)
+
+        /* unique constraint as mentioned in description text */
+        language(unique: &#39;enumerationValue&#39;)
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This works pretty fine so far. My problem occures when I update two enumeration-value-translations of the same enumeration-value in a way that the languages interchange. For example I have an &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;enumeration-value: &quot;Comedy&quot; &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;and some translations where the language is &quot;accidentally&quot; mixed up&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;translations for &quot;Comedy&quot;
+&lt;ul&gt;
+&lt;li&gt;language: german, value: &quot;Comedy&quot;&lt;/li&gt;
+&lt;li&gt;language: english, value &quot;Kom&#246;die&quot;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;if the user recognizes that he mixed up the language, he might want to swap the languages and save the enumeration again. And this is where my error occures, because after swapping the languages the enumeration-value-translations unique constraint validates to false.&lt;/p&gt;
+
+&lt;p&gt;To debug this i simply tryed to print out the error causing translations before and after i processed the params, so:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Enumeration enumeration = Enumeration.get(params[&#39;id&#39;]);
+
+println &quot;before:&quot;
+enumeration.enumerationValues.each() { enumValue -&amp;gt;
+    enumValue.enumerationValueTranslations.each() { enumValueTr -&amp;gt;
+        println enumValueTr;
+        if(!enumValueTr.validate()) {
+            // print errors...
+        }
+    }
+}
+
+// swap languages:
+// (this are the lines of codes that are actually executed, and cause the 
+// error. The actual processing of params looks different of course...)
+
+// sets the language of &quot;Comedy&quot; to English
+EnumerationValueTranslation.get(5).language = Language.get(1);
+// sets the language of &quot;Kom&#246;die&quot; to German
+EnumerationValueTranslation.get(6).language = Language.get(2);
+
+
+println &quot;after:&quot;
+enumeration.enumerationValues.each() { enumValue -&amp;gt;
+    enumValue.enumerationValueTranslations.each() { enumValueTr -&amp;gt;
+        println enumValueTr;
+        if(!enumValueTr.validate()) {
+            // print errors...
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;wich results to:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;before:
+EnumerationValueTranslation(value: Fantasy, language: en_US, enumerationValue: Fantasy)
+EnumerationValueTranslation(value: Phantasie, language: de_DE, enumerationValue: Fantasy) 
+
+EnumerationValueTranslation(value: Comedy, language: de_DE, enumerationValue: Comedy)
+EnumerationValueTranslation(value: Kom&#246;die, language: en_US, enumerationValue: Comedy)
+
+
+after:
+EnumerationValueTranslation(value: Fantasy, language: en_US, enumerationValue: Fantasy)
+EnumerationValueTranslation(value: Phantasie, language: de_DE, enumerationValue: Fantasy)
+
+EnumerationValueTranslation(value: Comedy, language: en_US, enumerationValue: Comedy)
+    validation fails: Property [language] of class [Translation] with value [Language(code: en_US)] must be unique
+EnumerationValueTranslation(value: Kom&#246;die, language: de_DE, enumerationValue: Comedy)
+    validation fails: Property [language] of class [Translation] with value [Language(code: de_DE)] must be unique
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;at this state i havend deleted, or saved (or flushed in any way) anything - this is just the result after altering the objects. And as you can see, there really is no inconsistency in the actual data and the validation should&#39;nt fail.&lt;/p&gt;
+
+&lt;p&gt;Might there be a mistake in the way i change the translations? I just fetched them by ID and simply updated the language - i tryed that out in a minimalistic example and it worked there...
+It also works if i just create a deep copy of all enumeration-values and enumeration-value-translations and store that instead (which means that the validation really should&#39;nt fail), but i think this is really not the way it should be done...&lt;/p&gt;
+
+&lt;p&gt;Another strange thing is, that the validation only fails if I iterate through the data. If i dont touch the data at all, no error occures, but the data isn&#39;t saved too, meaning that the folowing lines are causing the validations to be evaluated at all:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;enumeration.enumerationValues.each() { ev -&amp;gt;
+    ev.enumerationValueTranslations.each() { evt -&amp;gt;
+
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;thats why i strongly believe that there must be some non-trivial problem... please let me know if there is anything else you need to know.&lt;/p&gt;
+
+&lt;p&gt;thanks for any help&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/6042705/grails-delete-bidirectional-one-to-one-association</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">grails delete bidirectional one to one association</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="grails"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="groovy"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="associations"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="gorm"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="hbase"/>
+        <author>
+            <name>Bella</name>
+            <uri>http://stackoverflow.com/users/647281</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/6042705/grails-delete-bidirectional-one-to-one-association" />
+        <published>2011-05-18T09:44:13Z</published>
+        <updated>2011-06-01T07:13:05Z</updated>
+        <summary type="html">
+            &lt;p&gt;Hi, I have two domain classes with bidirectional one to one association:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class Domain2 {
+  static belongsTo = [domain1:Domain1]
+
+  String val21
+  String val22
+}
+
+class Domain1 {
+
+  String val11
+  String val12
+
+  static hasOne = [domain2: Domain2]
+}
+
+class Domain2Controller {
+  def create = {
+    domain2.properties = params
+    domain2.save(flush: true)
+  }
+
+  def remove = {
+    Domain2 domain2 = Domain2.findById(params.id)
+    domain2.delete(flush: true)
+  }
+}
+
+class Domain1Controller {
+  def create = {
+    def domain1 = new Domain1()        
+
+    def domain2 = Domain2.get(params.domain2)
+    if(domain2!=null){
+      domain1.domain2 = domain2
+      domain1.properties = params
+      domain1.save(flush: true)
+
+      domain2.domain1 = domain1
+      domain2.properties = params
+      domain2.save(flush:true)
+    }else{
+       domain1.properties = params
+       domain1.save(flush: true)
+     }
+  }
+
+  def remove = {
+    Domain1 domain1 = Domain1.findById(params.id)
+    domain1.delete(flush: true)
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;After creating domain2 and domain1 objects, I can not &lt;strong&gt;delete&lt;/strong&gt; and &lt;strong&gt;update&lt;/strong&gt; them.
+When I want to delete domain1 object with id=1, I got an exception:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;org.springframework.dao.DataIntegrityViolationException: Foreign key constraint violation trying to delete teastrelation.Domain1 with id 1
+
+at org.grails.hbase.gorm.DeletePersistentMethod.invoke(DeletePersistentMethod.groovy:66)
+
+    at org.grails.hbase.gorm.PersistentMethod$invoke.call(Unknown Source)
+
+    at org.grails.hbase.gorm.PersistentMethod$invoke.call(Unknown Source)
+
+        //---
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For removing in Domain1Controller  I have changed remove action:&lt;/p&gt;
+
+&lt;p&gt;def remove = {&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    Domain1 domain1 = Domain1.findById(params.id)
+
+    Domain2 domain2 = Domain2.findById(domain1.domain2.id)
+
+    domain1.domain2 = null
+
+    domain2.domain1 = null
+
+    domain2.save(flush:true)
+
+    domain1.save(flush:true)
+
+    domain1.delete(flush: true)
+
+    render params.id
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and only after it I can delete domain1 object, but it throw the following exception:
+ERROR gorm.SavePersistentMethod  - Cannot get property &#39;class&#39; on null object
+java.lang.NullPointerException: Cannot get property &#39;class&#39; on null object
+    at org.codehaus.groovy.runtime.NullObject.getProperty(NullObject.java:56)
+    at org.codehaus.groovy.runtime.InvokerHelper.getProperty(InvokerHelper.java:156)
+    at org.codehaus.groovy.runtime.callsite.PojoMetaClassGetPropertySite.callGetProperty(PojoMetaClassGetPropertySite.java:41)&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;When i want to update domain1 object, i got the following exception:&lt;/p&gt;
+
+&lt;p&gt;I got the following exception:&lt;/p&gt;
+
+&lt;p&gt;ERROR associations.ReferenceTable  - Reference table entry not found, row=[79, 78, 69, 84, 79, 79, 78, 69, 95, 79, 78, 69, 84, 79, 79, 78, 69, 95, 68, 79, 77, 65, 73, 78, 50, 95, 0, 0, 0, 0, 0, 0, 0, 1]&lt;/p&gt;
+
+&lt;p&gt;ERROR gorm.SavePersistentMethod  -Cannot get property &#39;class&#39; on null object
+java.lang.NullPointerException: Cannot get property &#39;class&#39; on null object
+    at org.codehaus.groovy.runtime.NullObject.getProperty(NullObject.java:56)
+    at org.codehaus.groovy.runtime.InvokerHelper.getProperty(InvokerHelper.java:156)
+    at org.codehaus.groovy.runtime.callsite.PojoMetaClassGetPropertySite.callGetProperty(PojoMetaClassGetPropertySite.java:41)
+// - - - -  -&lt;/p&gt;
+
+&lt;p&gt;I use grails 1.3.2 and hbase-0.2.4 plugin and I can not use mapping..&lt;/p&gt;
+
+&lt;p&gt;What am I doing wrong ?&lt;/p&gt;
+
+&lt;p&gt;I have already spent a lot of time on this problem.. please help if anyone can.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/6196654/amazon-rds-and-elastic-beanstalk-connectivity</id>
+        <re:rank scheme="http://stackoverflow.com">1</re:rank>
+        <title type="text">Amazon RDS and elastic beanstalk connectivity</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="grails"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="beanstalk"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="rds"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="elastic"/>
+        <author>
+            <name>sapan</name>
+            <uri>http://stackoverflow.com/users/779348</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/6196654/amazon-rds-and-elastic-beanstalk-connectivity" />
+        <published>2011-06-01T05:24:11Z</published>
+        <updated>2011-06-01T05:29:39Z</updated>
+        <summary type="html">
+            &lt;p&gt;Hello All, 
+There are already several threads where this question is discussed and I have already tried implementing suggestions discussed in 
+&lt;a href=&quot;http://stackoverflow.com/questions/5348006/elastic-beanstalk-rds-connection-error-using-grails&quot;&gt;Elastic Beanstalk -&amp;gt; RDS connection error using Grails&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;I have also opened ports to accept connections from &quot;All&quot; for ICMP, TCP and udp in my EC2 instance.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;I have made sure that my RDS and EC2 instances are in same zone (Eastern)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;I have also added the &quot;elasticbeanstalk-default&quot; security group in RDS default security group&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;I have added my local machine&#39;s IP address in RDS CIDR settings and I am able to connect to RDS through SQLYog from my machine. &lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;BUT when I try to connect my RDS instance from Elastic Beanstalk I am getting the following exception&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Caused by: java.net.ConnectException: Connection refused
+at java.net.PlainSocketImpl.socketConnect(Native Method)
+at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:310)
+at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:176)
+at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:163)
+at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:384)
+at java.net.Socket.connect(Socket.java:546)
+at java.net.Socket.connect(Socket.java:495)
+at java.net.Socket.&amp;lt;init&amp;gt;(Socket.java:392)
+at java.net.Socket.&amp;lt;init&amp;gt;(Socket.java:235)
+at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:256)
+at com.mysql.jdbc.MysqlIO.&amp;lt;init&amp;gt;(MysqlIO.java:293)
+... 18 more
+
+Jun 1, 2011 5:12:41 AM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error listenerStart
+Jun 1, 2011 5:12:41 AM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [] startup failed due to previous errors
+Jun 1, 2011 5:12:41 AM org.apache.catalina.core.StandardContext listenerStop
+SEVERE: Exception sending context destroyed event to listener instance of class         org.codehaus.groovy.grails.web.context.GrailsContextLoaderListener
+ org.springframework.beans.factory.BeanCreationException: Error creating bean with name.....
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.)
+at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+at java.lang.Thread.run(Thread.java:636)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;My DataSource.groovy params are as following&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;production {
+    dataSource {
+        pooled = true
+        dbCreate = &quot;update&quot; // one of &#39;create&#39;, &#39;create-drop&#39;,&#39;update&#39;
+        url = &quot;jdbc:mysql://[MyEndPoint]:3306/*****&quot;
+        username = &quot;*****&quot;
+        password = &quot;*****&quot;
+        dialect = org.hibernate.dialect.MySQL5InnoDBDialect
+        properties {
+            validationQuery = &quot;SELECT 1&quot;
+            testOnBorrow = true
+            testOnReturn = true
+            testWhileIdle = true
+            timeBetweenEvictionRunsMillis = 1000 * 60 * 30
+            numTestsPerEvictionRun = 3
+            minEvictableIdleTimeMillis = 1000 * 60 * 30
+        }
+    }
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I will really appreciate if I can get some help on this. I have been trying to solve this issue from several days now.
+Thanks&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/6186605/grails-jms-queue-annotation-fails-with-final-parameter</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Grails jms queue annotation fails with final parameter</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="grails"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="annotations"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="queue"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="jms"/>
+        <author>
+            <name>Jonas Ladenfors</name>
+            <uri>http://stackoverflow.com/users/777541</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/6186605/grails-jms-queue-annotation-fails-with-final-parameter" />
+        <published>2011-05-31T11:04:32Z</published>
+        <updated>2011-05-31T23:59:16Z</updated>
+        <summary type="html">
+            &lt;p&gt;I am using the annotation grails.plugin.jms.Queue from the Grails JMS plugin, but I cant figure out how to I use a variabel as the value of the name attribute.&lt;/p&gt;
+
+&lt;p&gt;like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;private static final inDebit = ConfigurationHolder.config.Q_IN_DEBIT&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;@Queue(name = inDebit )&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Which gives me the following error &lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Attribute &#39;name&#39; should have type &#39;java.lang.String&#39;; but found type &#39;java.lang.Object&#39; in @grails.plugin.jms.Queue&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I am using
+Grails 1.3.7, Grails JMS Plugin 1.1&lt;/p&gt;
+
+&lt;p&gt;Looks to me like the inDebit varible loses it&#39;s type somewhere?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/6193567/url-mapping-to-a-plugin-view</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Url mapping to a plugin view</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="grails"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="view"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="grails-plugin"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="url-mapping"/>
+        <author>
+            <name>Locke</name>
+            <uri>http://stackoverflow.com/users/474398</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/6193567/url-mapping-to-a-plugin-view" />
+        <published>2011-05-31T21:07:36Z</published>
+        <updated>2011-05-31T23:35:35Z</updated>
+        <summary type="html">
+            &lt;p&gt;What is the best, or the preferred way to map an url to a view that is within a plugin installed in a grails app?&lt;/p&gt;
+
+&lt;p&gt;The application has its own views, however, there is a view that is directly connected to the plugin and I would like to be able to access it. As far as I can see, there is no way to directly map the view in the plugin via UrlMappings.config, or is there?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/6193239/merge-two-domain-objects-and-reassign-children-to-one-of-them-in-grails</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">merge two domain objects and reassign children to one of them in Grails</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="grails"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="groovy"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="merge"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="gorm"/>
+        <author>
+            <name>Scott</name>
+            <uri>http://stackoverflow.com/users/311525</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/6193239/merge-two-domain-objects-and-reassign-children-to-one-of-them-in-grails" />
+        <published>2011-05-31T20:35:15Z</published>
+        <updated>2011-05-31T21:52:19Z</updated>
+        <summary type="html">
+            &lt;p&gt;I have two entries in a domain entity that I want to merge.  Let&#39;s call the parent House and the children Room.  I have a situation where I want to merge two House domains that are actually the same.  I have the logic to do this top level merge.  &lt;/p&gt;
+
+&lt;p&gt;However, I want to know if there is a way in Grails to easily say, &#39;go through the domain objects and wherever there is a fk pointer to House, update that fk to a new value&#39;.&lt;/p&gt;
+
+&lt;p&gt;The code would be something like this &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;houseInst1.magicMerge(houseInst2)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This would run the House merge as well as check for every domain object that has a pointer (fk) to House and update where it points to houseInst2 originally to point to houseInst1.&lt;/p&gt;
+
+&lt;p&gt;Update:  One key feature is that I&#39;d like this to work if someone adds another domain object with a link to the master object.  eg. if someone added Mortgages later, I don&#39;t want to update all my merge logic, it should go and find that Mortgages is a child of House, and update accordingly.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/6192877/how-to-use-gdatepicker-in-grails-gsp-to-pick-a-time</id>
+        <re:rank scheme="http://stackoverflow.com">1</re:rank>
+        <title type="text">How to use g:datePicker in grails gsp to pick a time?</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="grails"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="time"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="groovy"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="gsp"/>
+        <author>
+            <name>Andrea</name>
+            <uri>http://stackoverflow.com/users/148421</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/6192877/how-to-use-gdatepicker-in-grails-gsp-to-pick-a-time" />
+        <published>2011-05-31T20:01:18Z</published>
+        <updated>2011-05-31T20:37:18Z</updated>
+        <summary type="html">
+            &lt;p&gt;By using g:datePicker on java.sql.Time object that refers to a TIME legacy DB column I get this error:&lt;/p&gt;
+
+&lt;p&gt;Failed to convert property value of type java.util.GregorianCalendar to required type java.sql.Time for property jobTime; nested exception is java.lang.IllegalArgumentException: Cannot convert value of type [java.util.GregorianCalendar] to required type [java.sql.Time] for property jobTime: PropertyEditor [org.codehaus.groovy.grails.web.binding.StructuredDateEditor] returned inappropriate value&lt;/p&gt;
+
+&lt;p&gt;I&#39;ve searched through the whole web for hours but can&#39;t still figure out how to do, is there someone who can help please?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/6190929/accessing-running-grails-application-from-a-remote-machine</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Accessing running Grails application from a remote machine</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="server"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="grails"/>
+        <author>
+            <name>VictorArgentin</name>
+            <uri>http://stackoverflow.com/users/768676</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/6190929/accessing-running-grails-application-from-a-remote-machine" />
+        <published>2011-05-31T16:57:06Z</published>
+        <updated>2011-05-31T20:18:28Z</updated>
+        <summary type="html">
+            &lt;p&gt;I&#39;m developing a Grails application to a school work. Typically, this is the URL for any server running on a local machine:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;http://localhost:8080/ProjectName
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;After I run tomcat server with my Grails project, I go to that location and I can acess the website. But, as far as I know, everyone in my LAN should be able to load the website from same URL (&lt;code&gt;http://localhost:8080/ProjectName&lt;/code&gt;). As I have two computers on same lan via router, I tried to acess my website and it doesnt seems to be working. How can access the application from another computer? If possible, suggest a website that I can read and learn stuff about this matter, cause my lack of knowledge about servers is so dramatic.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/6190661/running-a-sh-file-inside-grails-server</id>
+        <re:rank scheme="http://stackoverflow.com">1</re:rank>
+        <title type="text">running a .sh file inside grails server</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="java"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="grails"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="groovy"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="io"/>
+        <author>
+            <name>Arthur Neves</name>
+            <uri>http://stackoverflow.com/users/534150</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/6190661/running-a-sh-file-inside-grails-server" />
+        <published>2011-05-31T16:32:14Z</published>
+        <updated>2011-05-31T19:56:25Z</updated>
+        <summary type="html">
+            &lt;p&gt;Hi, I am trying to run a bash file(.sh) to make some photos conversion in my grails server, my code is the following to make that task:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;        def folderTo = grailsAttributes.getApplicationContext().getResource(&quot;/files/&quot;).getFile()
+        def f = new File(folderFrom.toString())
+        def cmd = &#39;/bin/bash /var/lib/tomcat6/webapps/malibueventapp-qa/uploads/convertPhoto.sh /var/lib/tomcat6/webapps/malibueventapp-qa/uploads /var/lib/tomcat6/webapps/malibueventapp-qa/files&#39;
+        def process = runtime.exec(cmd, null, f);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;the problem here is, when I am running it in the server, I am getting the follow error:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Cannot run program &quot;/bin/bash&quot; (in directory &quot;/var/lib/tomcat6/webapps/malibueventapp-qa/uploads&quot;): java.io.IOException: error=12, Cannot allocate memory
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;that is the only message error i am getting! so I have no ideas what to do!&lt;/p&gt;
+
+&lt;p&gt;some sugestions?!&lt;/p&gt;
+
+&lt;p&gt;thanks&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/6191860/grails-redirect-to-a-page-in-case-of-error</id>
+        <re:rank scheme="http://stackoverflow.com">1</re:rank>
+        <title type="text">Grails redirect to a page in case of error</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="error"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="grails"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="redirect"/>
+        <author>
+            <name>VictorArgentin</name>
+            <uri>http://stackoverflow.com/users/768676</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/6191860/grails-redirect-to-a-page-in-case-of-error" />
+        <published>2011-05-31T18:27:43Z</published>
+        <updated>2011-05-31T19:29:00Z</updated>
+        <summary type="html">
+            &lt;p&gt;Hello. Here is a simple question. Is there any possibility of, if in any case there&#39;s an error in an application and the server show us an error page, instead redirect everything to a default page ?&lt;/p&gt;
+
+&lt;p&gt;Covering all errors.. is that possible ?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/6167950/groovy-grails-unable-to-resolve-class</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Groovy/Grails - Unable to Resolve Class</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="eclipse"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="grails"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="groovy"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="sts-springsourcetoolsuite"/>
+        <author>
+            <name>skaz</name>
+            <uri>http://stackoverflow.com/users/469106</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/6167950/groovy-grails-unable-to-resolve-class" />
+        <published>2011-05-29T13:20:13Z</published>
+        <updated>2011-05-31T19:28:44Z</updated>
+        <summary type="html">
+            &lt;p&gt;I am trying to build a Grails project in STS and am getting many error messages of the form: &lt;code&gt;Groovy:unable to resolve class org.codehaus.groovy.grails.commons.ConfigurationHolder&lt;/code&gt; as well as others like &lt;code&gt;Groovy:unable to resolve class org.grails.plugins.springsecurity.service.AuthenticateService&lt;/code&gt;
+.  I have Grails 1.3.7 selected in the Project Properties, but I don&#39;t see an item for &#39;Grails Depedencies&#39; like I do when I create a sample project.  Is this the problem?  How can I add it back in?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/6175481/how-to-print-each-value-in-list-returned-from-controller-action-in-to-each-row-of</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">how to print each value in list returned from controller action in to each row of gsp table?</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="list"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="grails"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="action"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="row"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="gsp"/>
+        <author>
+            <name>laxmi</name>
+            <uri>http://stackoverflow.com/users/762666</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/6175481/how-to-print-each-value-in-list-returned-from-controller-action-in-to-each-row-of" />
+        <published>2011-05-30T11:07:36Z</published>
+        <updated>2011-05-31T19:09:03Z</updated>
+        <summary type="html">
+            &lt;p&gt;Hi..&lt;/p&gt;
+
+&lt;p&gt;I am returning a list of dates,list of size and list of months from controller action to gsp..i want each value in dates,size and months list  to be displayed in 3 different fields of each row.how to achieve it?&lt;/p&gt;
+
+&lt;p&gt;Advance thanks&lt;/p&gt;
+
+&lt;p&gt;laxmi.P&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/6190651/grails-weblogic-and-redirection-on-root-seems-not-working</id>
+        <re:rank scheme="http://stackoverflow.com">1</re:rank>
+        <title type="text">Grails, Weblogic and redirection on root &quot;/&quot; seems not working.</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="grails"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="weblogic"/>
+        <author>
+            <name>Jonathan Lebrun</name>
+            <uri>http://stackoverflow.com/users/320322</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/6190651/grails-weblogic-and-redirection-on-root-seems-not-working" />
+        <published>2011-05-31T16:31:05Z</published>
+        <updated>2011-05-31T16:31:05Z</updated>
+        <summary type="html">
+            &lt;p&gt;I configured my grails application with an root path like this (in UrlMapping): &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&quot;/&quot;{
+    controller=&quot;mycontroller&quot;
+    action=&quot;myaction&quot;
+ }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;in mycontroller.myaction, depending of the role, I redirect to the right action : &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;def link 
+if (SpringSecurityUtils.ifAnyGranted(&quot;ROLE_ADMIN&quot;) link = g.createLink(action:      &quot;action1&quot;, controller:&quot;controller&quot;)
+else if (SpringSecurityUtils.ifAnyGranted(&quot;ROLE_ADMIN&quot;) link = g.createLink(action: &quot;action2&quot;, controller:&quot;controller&quot;) 
+else ...ANONYMOUS... {
+  link = g.creatLink(action:&quot;public&quot;, controller:&quot;mycontroller&quot;)
+}
+redirect (url:link)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;With embedded grails server, it&#39;s working fine but with &lt;strong&gt;weblogic&lt;/strong&gt; it redirect on the index.gsp.&lt;/p&gt;
+
+&lt;p&gt;Why ?&lt;/p&gt;
+
+&lt;p&gt;Do you have an idea ? &lt;/p&gt;
+
+&lt;p&gt;Thanks&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/2871977/binding-a-grails-date-from-params-in-a-controller</id>
+        <re:rank scheme="http://stackoverflow.com">1</re:rank>
+        <title type="text">Binding a Grails date from params in a controller</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="databinding"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="date"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="grails"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="groovy"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="controller"/>
+        <author>
+            <name>nils petersohn</name>
+            <uri>http://stackoverflow.com/users/170881</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/2871977/binding-a-grails-date-from-params-in-a-controller" />
+        <published>2010-05-20T08:07:31Z</published>
+        <updated>2011-05-31T16:24:39Z</updated>
+        <summary type="html">
+            &lt;p&gt;Why is it so hard to extract the date from the view via the params in a grails controller?&lt;/p&gt;
+
+&lt;p&gt;I don&#39;t want to extract the date by hand like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;instance.dateX = parseDate(params[&quot;dateX_value&quot;])//parseDate is from my helper class
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I just want to use &lt;code&gt;instance.properties = params&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;In the model the type is &lt;code&gt;java.util.Date&lt;/code&gt; and in the params is all the information: &lt;code&gt;[dateX_month: &#39;value&#39;, dateX_day: &#39;value&#39;, ...]&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;I searched on the net and found nothing on this. I hoped that Grails 1.3.0 could help but still the same thing.&lt;/p&gt;
+
+&lt;p&gt;I can&#39;t and will not believe that extracting the date by hand is necessary!&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/6186571/grails-hibernate-annotations</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Grails Hibernate annotations</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="hibernate"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="grails"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="annotations"/>
+        <author>
+            <name>VictorArgentin</name>
+            <uri>http://stackoverflow.com/users/768676</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/6186571/grails-hibernate-annotations" />
+        <published>2011-05-31T11:02:10Z</published>
+        <updated>2011-05-31T13:04:56Z</updated>
+        <summary type="html">
+            &lt;p&gt;Hi. Can any1 explain me what hibernate annotations are for? I&#39;m learning hibernate/grails and can&#39;t understand what it does. Check here: &lt;a href=&quot;http://grails.org/doc/1.0.x/guide/15.%20Grails%20and%20Hibernate.html&quot; rel=&quot;nofollow&quot;&gt;http://grails.org/doc/1.0.x/guide/15.%20Grails%20and%20Hibernate.html&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Thanks in advanced,
+J&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/5351704/testing-grails-data-binding</id>
+        <re:rank scheme="http://stackoverflow.com">1</re:rank>
+        <title type="text">testing grails data binding</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="unit-testing"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="grails"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="groovy"/>
+        <author>
+            <name>Don</name>
+            <uri>http://stackoverflow.com/users/2648</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/5351704/testing-grails-data-binding" />
+        <published>2011-03-18T12:03:20Z</published>
+        <updated>2011-05-31T12:29:13Z</updated>
+        <summary type="html">
+            &lt;p&gt;Hi,&lt;/p&gt;
+
+&lt;p&gt;I&#39;ve written the following Grails controller&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class CategoryController {
+
+    def create = {
+        def newCategory = new CategoryCommand()
+        bindData(newCategory, params)
+        [newCategory: newCategory]
+    }
+}
+
+class CategoryCommand {
+
+    String name
+    String seoName
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I&#39;ve written this unit test to test the data binding:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class CategoryControllerTests extends ControllerUnitTestCase {
+
+
+    void testCreate() {
+
+        // A new ControllerCommand should be returned if invoked with no params
+        assertNotNull controller.create()
+
+        // If called with params, they should be bound
+        mockParams.name = &#39;snooker&#39;
+        mockParams.seoName = &#39;snooker-loopy&#39;
+        def model = controller.create()
+
+        CategoryCommand newCategory = model.newCategory
+        assertEquals &#39;snooker&#39;, newCategory.name
+        assertEquals &#39;snooker-loopy&#39;, newCategory.seoName
+
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;But I get this exception when &lt;code&gt;controller.create()&lt;/code&gt; is invoked:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;No signature of method: com.example.CategoryController.bindData() is applicable for argument types: (com.example.CategoryCommand, org.codehaus.groovy.grails.web.taglib.GroovyPageAttributes) values: [com.example.CategoryCommand@7860e7d2, [:]] &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I tried running this as an integration test instead, but the result is the same.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/questions/6186137/how-to-pass-value-from-list-of-maps-in-gsp-to-action</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">how to pass value from list of maps in gsp to action?</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="list"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="grails"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="map"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="row"/><category scheme="http://stackoverflow.com/feeds/tag/grails/tags" term="params"/>
+        <author>
+            <name>laxmi</name>
+            <uri>http://stackoverflow.com/users/762666</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/6186137/how-to-pass-value-from-list-of-maps-in-gsp-to-action" />
+        <published>2011-05-31T10:22:22Z</published>
+        <updated>2011-05-31T11:08:02Z</updated>
+        <summary type="html">
+            &lt;p&gt;Hi.
+I have gsp code as,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;g:each  in=&quot;${flist}&quot;&amp;gt; &amp;lt;tr bgcolor=&quot;#ffffff&quot;&amp;gt;
+            &amp;lt;td align=&quot;center&quot;&amp;gt;&amp;lt;g:link controller=&quot;spider&quot; action=&quot;ThirdPage&quot; params=&quot;${it.get(&#39;dt&#39;)}&quot;&amp;gt;
+            ${it.get(&#39;dt&#39;)}&amp;lt;/g:link&amp;gt;
+            &amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;wher flist is list of maps.now i want to pass dt which is key in map within list to controller action.i tried it with above codes but its not working.what mistake i am doing there.&lt;/p&gt;
+
+&lt;p&gt;Thanks in advance,
+laxmi&lt;/p&gt;
+
+        </summary>
+    </entry>
+</feed>

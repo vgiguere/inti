@@ -1,0 +1,4 @@
+CREATE USER 'admin'@'localhost' IDENTIFIED BY '1nt1@dmin';
+GRANT ALL PRIVILEGES ON INTI.* TO 'admin'@'%';
+CREATE USER 'intiApp'@'localhost' IDENTIFIED BY 'J!NS09DSB#I829Q?';
+GRANT ALL PRIVILEGES ON INTI.* TO 'intiApp'@'%';
